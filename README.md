@@ -6,7 +6,6 @@ The plugin sets `foldmethod=expr` for Hoon buffers. Each `++`, `+$`, or `+*`
 arm header remains visible while its body folds through the line before the
 next sibling arm or the core's terminating `--`. Nested `|_`, `|%`, `|^`, and
 `|@` cores add nested fold levels when they appear inside an arm.
-bodies are folded as well.
 
 ## Installation
 
