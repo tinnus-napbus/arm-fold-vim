@@ -7,6 +7,8 @@ visible while its body folds until the next sibling arm or the core's
 terminating `--`. Nested cores are also folded, and the comment preambles of
 arms are preserved.
 
+![screenshot](./img/screenshot.png)
+
 ## Installation
 
 ### vim-plug
