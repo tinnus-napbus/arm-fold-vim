@@ -2,10 +2,10 @@
 
 Vim folding for arms in Hoon cores.
 
-The plugin sets `foldmethod=expr` for Hoon buffers. Each `++`, `+$`, or `+*`
-arm header remains visible while its body folds through the line before the
-next sibling arm or the core's terminating `--`. Nested `|_`, `|%`, `|^`, and
-`|@` cores add nested fold levels when they appear inside an arm.
+The plugin sets `foldmethod=expr` for Hoon buffers. Each arm header remains
+visible while its body folds until the next sibling arm or the core's
+terminating `--`. Nested cores are also folded, and the comment preambles of
+arms are preserved.
 
 ## Installation
 
