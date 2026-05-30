@@ -8,8 +8,64 @@ next sibling arm or the core's terminating `--`. Nested `|_`, `|%`, `|^`, and
 `|@` cores add nested fold levels when they appear inside an arm. One-line arm
 bodies are folded as well.
 
-Install this directory with your preferred Vim package manager. To open all
-folds in the current buffer, run `zR`.
+## Installation
+
+Replace `YOUR_USERNAME` with the GitHub account that owns the repository.
+
+### vim-plug
+
+Add this to `.vimrc` or `init.vim`:
+
+```vim
+Plug 'YOUR_USERNAME/arm-fold-vim'
+```
+
+Then run `:PlugInstall`.
+
+### lazy.nvim
+
+Add this to your Neovim plugin spec:
+
+```lua
+{
+  "YOUR_USERNAME/arm-fold-vim",
+  ft = "hoon",
+}
+```
+
+Then run `:Lazy sync`.
+
+### packer.nvim
+
+Add this to your Neovim plugin specification:
+
+```lua
+use "YOUR_USERNAME/arm-fold-vim"
+```
+
+Then run `:PackerSync`.
+
+### Native Packages
+
+For Neovim:
+
+```sh
+git clone https://github.com/YOUR_USERNAME/arm-fold-vim.git \
+  ~/.local/share/nvim/site/pack/plugins/start/arm-fold-vim
+```
+
+For Vim:
+
+```sh
+git clone https://github.com/YOUR_USERNAME/arm-fold-vim.git \
+  ~/.vim/pack/plugins/start/arm-fold-vim
+```
+
+The plugin includes fallback `.hoon` filetype detection.
+
+## Usage
+
+To open all folds in the current buffer, run `zR`.
 
 With the cursor on an arm header, press `za` to cycle through:
 
