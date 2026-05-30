@@ -71,8 +71,7 @@ With the cursor on an arm header, press `za` to cycle through:
 3. The full arm body recursively open.
 
 The `:ArmFoldToggle` command performs the same action. Put the cursor on a
-visible sub-arm header and use `za` to toggle that arm independently. On lines
-other than arm headers, `za` keeps its standard Vim behavior.
+visible sub-arm header and use `za` to toggle that arm independently.
 
 Hoon buffers start in an outline view: nested arm headers remain visible while
 ordinary content runs and leaf arm bodies are folded. Run `:ArmFoldShallow` to
