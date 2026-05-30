@@ -10,14 +10,12 @@ bodies are folded as well.
 
 ## Installation
 
-Replace `YOUR_USERNAME` with the GitHub account that owns the repository.
-
 ### vim-plug
 
 Add this to `.vimrc` or `init.vim`:
 
 ```vim
-Plug 'YOUR_USERNAME/arm-fold-vim'
+Plug 'tinnus-napbus/arm-fold-vim'
 ```
 
 Then run `:PlugInstall`.
@@ -28,7 +26,7 @@ Add this to your Neovim plugin spec:
 
 ```lua
 {
-  "YOUR_USERNAME/arm-fold-vim",
+  "tinnus-napbus/arm-fold-vim",
   ft = "hoon",
 }
 ```
@@ -40,7 +38,7 @@ Then run `:Lazy sync`.
 Add this to your Neovim plugin specification:
 
 ```lua
-use "YOUR_USERNAME/arm-fold-vim"
+use "tinnus-napbus/arm-fold-vim"
 ```
 
 Then run `:PackerSync`.
@@ -50,14 +48,14 @@ Then run `:PackerSync`.
 For Neovim:
 
 ```sh
-git clone https://github.com/YOUR_USERNAME/arm-fold-vim.git \
+git clone https://github.com/tinnus-napbus/arm-fold-vim.git \
   ~/.local/share/nvim/site/pack/plugins/start/arm-fold-vim
 ```
 
 For Vim:
 
 ```sh
-git clone https://github.com/YOUR_USERNAME/arm-fold-vim.git \
+git clone https://github.com/tinnus-napbus/arm-fold-vim.git \
   ~/.vim/pack/plugins/start/arm-fold-vim
 ```
 
